@@ -1,1 +1,51 @@
+name: Daily Tadawul Data Collection
 
+on:
+  schedule:
+    - cron: '15 15 * * 0,1,2,3,4'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  collect-data:
+    name: Collect Tadawul Market Data
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install yfinance pandas pyarrow requests
+
+      - name: Collect market data
+        run: python scripts/collectors/collect_daily.py
+        env:
+          TZ: Asia/Riyadh
+
+      - name: Validate data quality
+        run: python scripts/validators/data_quality_check.py
+
+      - name: Commit and push data
+        run: |
+          git config --local user.email "data-bot@tadawul-lake"
+          git config --local user.name "Tadawul Data Bot"
+          git add data/ reports/
+          if git diff --staged --quiet; then
+            echo "لا توجد بيانات جديدة اليوم"
+          else
+            RIYADH_DATE=$(TZ='Asia/Riyadh' date '+%Y-%m-%d')
+            git commit -m "data: ${RIYADH_DATE}"
+            git push
+          fi
