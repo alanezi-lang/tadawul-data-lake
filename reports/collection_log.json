@@ -4,5 +4,22 @@
     "timestamp": "2026-05-03T06:59:06.488140",
     "status": "SKIPPED",
     "reason": "السوق مغلق"
+  },
+  {
+    "date": "2026-05-03",
+    "timestamp": "2026-05-03T17:36:47.662137",
+    "status": "SUCCESS",
+    "stocks_collected": 167,
+    "stocks_expected": 178,
+    "coverage_pct": 93.8,
+    "advancing": 107,
+    "declining": 52,
+    "market_volume_sar_bn": 3.78,
+    "tasi_close": null,
+    "brent_close": null,
+    "saibor_3m": null,
+    "sectors_collected": 14,
+    "foreign_stocks": 20,
+    "dividend_announcements": 0
   }
 ]
