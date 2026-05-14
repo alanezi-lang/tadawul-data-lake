@@ -394,5 +394,17 @@
         "message": "ملكية الأجانب كلها None - راجع URL تداول"
       }
     ]
+  },
+  {
+    "date": "2026-05-14",
+    "timestamp": "2026-05-14T20:48:09.366585",
+    "status": "SKIPPED",
+    "reason": "السوق مغلق",
+    "summary": {
+      "critical": 0,
+      "warnings": 0,
+      "info": 0
+    },
+    "issues": []
   }
 ]

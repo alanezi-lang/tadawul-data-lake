@@ -140,5 +140,11 @@
     "sectors_collected": 14,
     "foreign_stocks": 20,
     "dividend_announcements": 0
+  },
+  {
+    "date": "2026-05-14",
+    "timestamp": "2026-05-14T20:48:07.944376",
+    "status": "SKIPPED",
+    "reason": "السوق مغلق"
   }
 ]
