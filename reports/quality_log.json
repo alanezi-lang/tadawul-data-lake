@@ -580,5 +580,17 @@
       "info": 0
     },
     "issues": []
+  },
+  {
+    "date": "2026-05-25",
+    "timestamp": "2026-05-25T20:23:28.913766",
+    "status": "SKIPPED",
+    "reason": "السوق مغلق",
+    "summary": {
+      "critical": 0,
+      "warnings": 0,
+      "info": 0
+    },
+    "issues": []
   }
 ]
