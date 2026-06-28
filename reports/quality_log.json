@@ -1740,5 +1740,65 @@
         "gap_days": 12
       }
     ]
+  },
+  {
+    "date": "2026-06-28",
+    "timestamp": "2026-06-28T16:22:36.747196",
+    "status": "WARN",
+    "summary": {
+      "critical": 0,
+      "warnings": 6,
+      "info": 3
+    },
+    "issues": [
+      {
+        "level": "WARNING",
+        "check": "stock_count",
+        "message": "أسهم مجموعة 168 أقل من المتوقع",
+        "value": 168
+      },
+      {
+        "level": "WARNING",
+        "check": "missing_brent_crude_close",
+        "message": "بيانات ناقصة: brent_crude_close"
+      },
+      {
+        "level": "WARNING",
+        "check": "missing_tasi_close",
+        "message": "بيانات ناقصة: tasi_close"
+      },
+      {
+        "level": "WARNING",
+        "check": "missing_vix_close",
+        "message": "بيانات ناقصة: vix_close"
+      },
+      {
+        "level": "WARNING",
+        "check": "missing_us_10y_yield_close",
+        "message": "بيانات ناقصة: us_10y_yield_close"
+      },
+      {
+        "level": "INFO",
+        "check": "saibor_3m_null",
+        "message": "SAIBOR 3M = None - راجع URL ساما"
+      },
+      {
+        "level": "WARNING",
+        "check": "foreign_all_null",
+        "message": "ملكية الأجانب كلها None - راجع URL تداول"
+      },
+      {
+        "level": "INFO",
+        "check": "data_gap",
+        "message": "فجوة 5 أيام: 2026-05-12 → 2026-05-17",
+        "gap_days": 5
+      },
+      {
+        "level": "INFO",
+        "check": "data_gap",
+        "message": "فجوة 12 أيام: 2026-05-19 → 2026-05-31",
+        "gap_days": 12
+      }
+    ]
   }
 ]
