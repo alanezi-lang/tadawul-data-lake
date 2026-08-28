@@ -4363,5 +4363,17 @@
         "gap_days": 12
       }
     ]
+  },
+  {
+    "date": "2026-08-28",
+    "timestamp": "2026-08-28T00:23:33.742045",
+    "status": "SKIPPED",
+    "reason": "السوق مغلق",
+    "summary": {
+      "critical": 0,
+      "warnings": 0,
+      "info": 0
+    },
+    "issues": []
   }
 ]
