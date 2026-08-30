@@ -1269,5 +1269,22 @@
     "timestamp": "2026-08-28T00:23:33.329726",
     "status": "SKIPPED",
     "reason": "السوق مغلق"
+  },
+  {
+    "date": "2026-08-30",
+    "timestamp": "2026-08-30T18:36:58.083542",
+    "status": "SUCCESS",
+    "stocks_collected": 168,
+    "stocks_expected": 178,
+    "coverage_pct": 94.4,
+    "advancing": 53,
+    "declining": 110,
+    "market_volume_sar_bn": 2.91,
+    "tasi_close": null,
+    "brent_close": null,
+    "saibor_3m": null,
+    "sectors_collected": 14,
+    "foreign_stocks": 20,
+    "dividend_announcements": 0
   }
 ]
