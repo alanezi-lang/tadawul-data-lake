@@ -1371,5 +1371,22 @@
     "sectors_collected": 14,
     "foreign_stocks": 20,
     "dividend_announcements": 0
+  },
+  {
+    "date": "2026-09-07",
+    "timestamp": "2026-09-07T19:07:57.578032",
+    "status": "SUCCESS",
+    "stocks_collected": 168,
+    "stocks_expected": 178,
+    "coverage_pct": 94.4,
+    "advancing": 67,
+    "declining": 92,
+    "market_volume_sar_bn": 2.93,
+    "tasi_close": null,
+    "brent_close": null,
+    "saibor_3m": null,
+    "sectors_collected": 14,
+    "foreign_stocks": 20,
+    "dividend_announcements": 0
   }
 ]
