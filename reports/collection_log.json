@@ -1575,5 +1575,11 @@
     "sectors_collected": 14,
     "foreign_stocks": 20,
     "dividend_announcements": 0
+  },
+  {
+    "date": "2026-09-23",
+    "timestamp": "2026-09-23T19:01:56.804272",
+    "status": "SKIPPED",
+    "reason": "السوق مغلق"
   }
 ]
